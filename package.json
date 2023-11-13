@@ -1,0 +1,12 @@
+{
+  "name": "chai-par-charcha",
+  "version": "1",
+  "description": "A random project to revise my backend learnings",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start" : "node app.js" 
+  },
+  "author": "Aman Malviya",
+  "license": "ISC"
+}
