@@ -1,6 +1,6 @@
 
 import mongoose from "mongoose";
-import { DBname } from "../src/constants";
+import { DBname } from "../constants";
 
 // * ----------------------------------------------------------------
 
