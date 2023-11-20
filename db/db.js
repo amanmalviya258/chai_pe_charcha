@@ -1,25 +1,26 @@
 
-
-
-
+import mongoose from "mongoose";
+import { DBname } from "../src/constants";
 
 // * ----------------------------------------------------------------
 
-//Method One 
-//  (async () => {
-//   try {
-//     mongoose.connect(process.env.MONDODB_URI);
-//   } catch (error) {
-//     console.log("ERROR", error);
-//     throw err;
-//   }
-// })();
+//Method  iife
+const connectDB = async () => {
+  try {
+   const ConnectionInstance =  await mongoose.connect(` ${process.env.MONDODB_URI}/${DBname}`);
+    console.log(`Connected to ${DBname}`);
+    console.log(ConnectionInstance)
+  } catch (error) {
+    console.log("MONGODB CONNECTION FAILED", error);
+    process.exit(1);
+  }
+};
 
- 
+    export default connectDB;
 
 // *  ----------------------------------------------------------------
 
-//Method Two
+//Method Two normal function
 
 // function connect() {
 //   mongoose.connect(process.env.MONDODB_URI, {useNewUrlParser: true,  useUnifiedTopology: true,})

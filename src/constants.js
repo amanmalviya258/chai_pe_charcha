@@ -1,1 +1,1 @@
- 
+ export const DBname = 'videotubeDatabase'
