@@ -1,6 +1,5 @@
 //Method 1
 
-
 const asyncHandler = (func) => {
   async (req, res, next) => {
     try {
